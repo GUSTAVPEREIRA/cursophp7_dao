@@ -19,11 +19,17 @@ echo json_encode($usuarios);*/
 //$search = Usuario::search("ro");
 //echo json_encode($search);
 //Autentica login
+//$usuario = new Usuario();
+
+//$usuario->login("root","root");
+
+//echo $usuario;
+////////////////////// inserindo
+//$aluno = new Usuario("aluno","@aluno");
+//$aluno->insert();
+//echo $aluno;
+//Update
 $usuario = new Usuario();
-
-$usuario->login("root","root");
-
-echo $usuario;
-
-
+$usuario->loadByI(6);
+$usuario->update("professor","literatura");
  ?>
