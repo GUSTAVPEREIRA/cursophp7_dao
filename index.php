@@ -29,7 +29,14 @@ echo json_encode($usuarios);*/
 //$aluno->insert();
 //echo $aluno;
 //Update
+//$usuario = new Usuario();
+//$usuario->loadByI(6);
+//$usuario->update("professor","literatura");
+////////////Deletando
+
 $usuario = new Usuario();
 $usuario->loadByI(6);
-$usuario->update("professor","literatura");
+$usuario->delete();
+
+echo $usuario;
  ?>
